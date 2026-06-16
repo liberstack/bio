@@ -1,21 +1,29 @@
 /* ── Reset & base ─────────────────────────────────── */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-:root {
-  --bg:        #0f0f0f;
-  --surface:   #1a1a1a;
-  --border:    #2a2a2a;
-  --text:      #e2e2e2;
-  --muted:     #888;
-  --accent:    #7c6fff;
-  --accent-h:  #a99fff;
-  --radius:    6px;
-  --max-w:     720px;
-  --font:      'Inter', system-ui, sans-serif;
-  --mono:      'Fira Code', 'Cascadia Code', monospace;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-html { scroll-behavior: smooth; }
+:root {
+  --bg: #0f0f0f;
+  --surface: #1a1a1a;
+  --border: #2a2a2a;
+  --text: #e2e2e2;
+  --muted: #888;
+  --accent: #7c6fff;
+  --accent-h: #a99fff;
+  --radius: 6px;
+  --max-w: 900px;
+  --font: 'Inter', system-ui, sans-serif;
+  --mono: 'Fira Code', 'Cascadia Code', monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: var(--font);
@@ -24,7 +32,8 @@ body {
   min-height: 100dvh;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  line-height: 1.65;
+  line-height: 1.75;
+  font-size: 1.05rem;
 }
 
 /* ── Header / Nav ─────────────────────────────────── */
@@ -32,7 +41,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 1.25rem 3rem;
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
@@ -42,23 +51,28 @@ header {
 
 .site-name {
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: var(--text);
   text-decoration: none;
   letter-spacing: -0.02em;
 }
 
-nav { display: flex; gap: 1.5rem; }
+nav {
+  display: flex;
+  gap: 2rem;
+}
 
 nav a {
   color: var(--muted);
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   transition: color 0.15s;
 }
 
 nav a:hover,
-nav a.active { color: var(--accent-h); }
+nav a.active {
+  color: var(--accent-h);
+}
 
 /* ── Main / content ───────────────────────────────── */
 main {
@@ -68,11 +82,19 @@ main {
   padding: 3rem 1.5rem;
 }
 
-.loading { color: var(--muted); font-size: 0.9rem; }
-.error   { color: #f87171; }
+.loading {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.error {
+  color: #f87171;
+}
 
 /* ── Markdown body ────────────────────────────────── */
-.md-body { max-width: 100%; }
+.md-body {
+  max-width: 100%;
+}
 
 .md-body h1,
 .md-body h2,
@@ -85,11 +107,23 @@ main {
   letter-spacing: -0.03em;
 }
 
-.md-body h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); margin-top: 0; }
-.md-body h2 { font-size: clamp(1.3rem, 3vw, 1.8rem); }
-.md-body h3 { font-size: 1.15rem; color: var(--text); }
+.md-body h1 {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  margin-top: 0;
+}
 
-.md-body p  { margin-bottom: 1.2rem; }
+.md-body h2 {
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+}
+
+.md-body h3 {
+  font-size: 1.15rem;
+  color: var(--text);
+}
+
+.md-body p {
+  margin-bottom: 1.2rem;
+}
 
 .md-body a {
   color: var(--accent-h);
@@ -97,7 +131,9 @@ main {
   text-underline-offset: 3px;
 }
 
-.md-body a:hover { color: #fff; }
+.md-body a:hover {
+  color: #fff;
+}
 
 .md-body ul,
 .md-body ol {
@@ -105,7 +141,9 @@ main {
   margin-bottom: 1.2rem;
 }
 
-.md-body li { margin-bottom: 0.4rem; }
+.md-body li {
+  margin-bottom: 0.4rem;
+}
 
 .md-body blockquote {
   border-left: 3px solid var(--accent);
@@ -166,12 +204,28 @@ main {
   text-align: left;
 }
 
-.md-body th { background: var(--surface); color: #fff; }
+.md-body th {
+  background: var(--surface);
+  color: #fff;
+}
 
 /* 404 */
-.not-found { text-align: center; padding-top: 5rem; }
-.not-found h1 { font-size: 6rem; color: var(--border); margin-bottom: 0.5rem; }
-.not-found a  { color: var(--accent-h); text-decoration: none; font-size: 0.95rem; }
+.not-found {
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.not-found h1 {
+  font-size: 6rem;
+  color: var(--border);
+  margin-bottom: 0.5rem;
+}
+
+.not-found a {
+  color: var(--accent-h);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
 
 /* ── Footer ───────────────────────────────────────── */
 footer {
@@ -184,13 +238,31 @@ footer {
   color: var(--muted);
 }
 
-footer a { color: var(--muted); text-decoration: none; }
-footer a:hover { color: var(--text); }
+footer a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--text);
+}
 
 /* ── Responsive ───────────────────────────────────── */
 @media (max-width: 600px) {
-  header { padding: 0.9rem 1.25rem; }
-  nav    { gap: 1rem; }
-  main   { padding: 2rem 1.25rem; }
-  footer { flex-direction: column; gap: 0.5rem; }
+  header {
+    padding: 0.9rem 1.25rem;
+  }
+
+  nav {
+    gap: 1rem;
+  }
+
+  main {
+    padding: 2rem 1.25rem;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }

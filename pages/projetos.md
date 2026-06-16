@@ -1,23 +1,31 @@
 # Projetos
 
-## Roadmap Studio
+## Developer Skill Vault 
 
-Ferramenta web para criar e exportar roadmaps visuais em SVG. Tema dark, edição de nós, integração com Claude API.
+Conteúdo exclusivo para desenvolvedores focado em JavaScript e Python; projetos, boilerplates, templates, aplicações web, automações, workflow, tutoriais, guias, documentação README/DEPLOY.
 
-**Stack:** Vanilla JS · SVG · Claude API
-
----
-
-## SPA Markdown
-
-Este site — um boilerplate de SPA vanilla JS que renderiza conteúdo Markdown. Zero dependências de build.
-
-**Stack:** Vanilla JS · marked.js · CSS
+**🔒 DEV Skill Vault: Conteúdo Exclusivo ↓**
+- [svault.pages.dev](https://svault.pages.dev)
 
 ---
 
-## [Outro projeto]
+## Workflow para Desenvolvedores: Das Ferramentas ao Produto 
 
-Descrição breve do projeto, o que resolve e como.
+eBook técnico sobre Desenvolvimento Web focado em JavaScript, Automações com Python, Ferramentas Digitais, Workflow e Criação de Produtos Digitais.
 
-**Stack:** ...
+**📘 Workflow para Desenvolvedores ↓**
+- [liberstack/workflow-ebook](https://github.com/liberstack/workflow-ebook)
+
+---
+
+
+## Liberstack: Open Source HUB 
+
+Uso meu repositorio pessoal Git como plataforma para divulgacao tecnica e para colaboracao com outros desenvolvedores. Publico projetos open source com foco em html, css, javascript, typescript, node.js, python, sqlite;
+
+**💾 Liberstack: Open Source HUB ↓**
+- [github.com/liberstack](https://github.com/liberstack)
+
+
+---
+
