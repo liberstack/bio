@@ -9,21 +9,22 @@ Conteúdo exclusivo para desenvolvedores focado em JavaScript e Python; projetos
 
 ---
 
-## Workflow para Desenvolvedores: Das Ferramentas ao Produto 
+## Liberstack BLOG  
 
-eBook técnico sobre Desenvolvimento Web focado em JavaScript, Automações com Python, Ferramentas Digitais, Workflow e Criação de Produtos Digitais.
+BLOG técnico sobre Desenvolvimento Web focado em JavaScript, Automações com Python, Ferramentas, Workflow e Criação de Produtos Digitais.
 
-**📘 Workflow para Desenvolvedores ↓**
-- [liberstack/workflow-ebook](https://github.com/liberstack/workflow-ebook)
+**📝 Liberstack BLOG ↓**
+- [liberstack.github.io/blog](https://liberstack.github.io/blog)
 
 ---
 
 
-## Liberstack: Open Source HUB 
+## Open Source HUB 
 
-Uso meu repositorio pessoal Git como plataforma para divulgacao tecnica e para colaboracao com outros desenvolvedores. Publico projetos open source com foco em html, css, javascript, typescript, node.js, python, sqlite;
+Uso meu repositório pessoal no Git como plataforma para divulgação técnica e colaboração com outros desenvolvedores. Publico projetos open source com foco em HTML, CSS, JavaScript, TypeScript, Node.js, Python e SQLite.
 
-**💾 Liberstack: Open Source HUB ↓**
+
+**💾 Open Source HUB ↓**
 - [github.com/liberstack](https://github.com/liberstack)
 
 
