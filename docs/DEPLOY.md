@@ -1,65 +1,65 @@
 # Deploy
 
-O site é HTML/CSS/JS estático puro — funciona em qualquer host que sirva arquivos estáticos. Nenhuma configuração de build necessária.
+Instruções para publicar o portfolio no GitHub Pages ou Cloudflare Pages.
 
 ---
 
 ## GitHub Pages
 
-1. Crie um repositório no GitHub e suba todos os arquivos
-2. Vá em **Settings → Pages**
-3. Em "Branch", selecione `main` (ou `master`) e clique em **Save**
-4. O site estará disponível em `https://<usuario>.github.io/<repositorio>/`
+### 1. Criar o repositório
 
-Para publicar como página pessoal (`<usuario>.github.io`), o repositório precisa se chamar exatamente `<usuario>.github.io`.
+Crie um repositório público no GitHub. Para que o site fique disponível em `seuusuario.github.io`, o nome do repositório deve ser exatamente `seuusuario.github.io`.
+
+Para um repositório com nome qualquer, o site fica em `seuusuario.github.io/nome-do-repo`.
+
+### 2. Enviar os arquivos
+
+```bash
+git init
+git add .
+git commit -m "init"
+git remote add origin https://github.com/seuusuario/seuusuario.github.io.git
+git push -u origin main
+```
+
+### 3. Ativar o GitHub Pages
+
+No repositório, acesse **Settings → Pages**. Em **Source**, selecione a branch `main` e a pasta `/ (root)`. Salve.
+
+O site estará disponível em alguns minutos no endereço exibido na página.
 
 ---
 
 ## Cloudflare Pages
 
-1. Suba os arquivos para um repositório no GitHub
-2. Acesse [pages.cloudflare.com](https://pages.cloudflare.com) e clique em **Create a project**
-3. Conecte o repositório
-4. Deixe "Build command" e "Build output directory" em branco — é estático
-5. Clique em **Save and Deploy**
+### 1. Acessar o dashboard
 
-Domínio gratuito no formato `<projeto>.pages.dev`. Suporta domínio customizado.
+Acesse [pages.cloudflare.com](https://pages.cloudflare.com) e faça login.
 
----
+### 2. Criar o projeto
 
-## Netlify
+Clique em **Create a project → Connect to Git**. Autorize o acesso ao GitHub e selecione o repositório do portfolio.
 
-**Sem Git (mais rápido):**
-Arraste a pasta do projeto para [app.netlify.com/drop](https://app.netlify.com/drop). Pronto.
+### 3. Configurar o build
 
-**Com Git:**
-1. Suba os arquivos para um repositório no GitHub
-2. Em [app.netlify.com](https://app.netlify.com), clique em **Add new site → Import an existing project**
-3. Conecte o repositório
-4. Deixe "Build command" e "Publish directory" em branco
-5. Clique em **Deploy**
+Como o projeto não tem build step, deixe as configurações assim:
 
-Domínio gratuito no formato `<nome-aleatorio>.netlify.app`. Suporta domínio customizado.
+| Campo | Valor |
+|---|---|
+| Framework preset | None |
+| Build command | *(vazio)* |
+| Build output directory | `/` |
 
----
+Clique em **Save and Deploy**.
 
-## Domínio customizado
+### 4. Domínio customizado (opcional)
 
-Todos os hosts acima suportam domínio próprio gratuitamente. O processo geral:
-
-1. Compre o domínio (Cloudflare Registrar, Namecheap, Porkbun etc.)
-2. No painel do host, adicione o domínio customizado
-3. Aponte o DNS conforme as instruções do host (geralmente um registro `CNAME` ou `A`)
-4. Aguarde a propagação (alguns minutos no Cloudflare, até 48h em outros)
+No painel do projeto, acesse **Custom domains** e siga as instruções para apontar seu domínio.
 
 ---
 
-## Checklist antes de publicar
+## Observações
 
-- [ ] Nome, cargo e textos atualizados em `content.md`
-- [ ] Links de projetos apontando para URLs reais (não `#`)
-- [ ] E-mail e redes sociais corretos na seção de contato
-- [ ] `legal.md` revisado com seu nome/contato
-- [ ] `<title>` e `<meta name="description">` atualizados no `index.html`
-- [ ] Tags Open Graph (`og:title`, `og:description`) atualizadas no `index.html`
-- [ ] Ano no rodapé atualizado no `index.html`
+- Não há arquivo `_config.yml` nem nenhuma configuração de build necessária.
+- Qualquer alteração no `index.html`, `style.css`, `ui.js` ou `config.js` basta fazer `git push` para o deploy atualizar automaticamente.
+- A pasta `assets/` com a foto deve estar incluída no repositório.

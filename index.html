@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Guilherme Ribeiro</title>
+  <title>Guilherme Ribeiro — Desenvolvedor JavaScript & Python</title>
   <meta name="description"
     content="Portfolio de Guilherme Ribeiro, desenvolvedor JavaScript e Python focado em soluções simples e back-ends enxutos.">
   <meta property="og:title" content="Guilherme Ribeiro — Desenvolvedor JavaScript & Python">
@@ -27,14 +27,91 @@
 
       <aside class="sidebar" id="sidebar">
         <p class="sidebar-label"></p>
-        <nav id="fileTree" class="file-tree" aria-label="Navegação de seções"></nav>
+        <nav class="file-tree" aria-label="Navegação de seções">
+          <button class="tree-item" data-target="block-hero">Home</button>
+          <button class="tree-item" data-target="block-sobre">Sobre</button>
+          <button class="tree-item" data-target="block-projetos">Projetos</button>
+          <button class="tree-item" data-target="block-contato">Contato</button>
+        </nav>
         <button id="legalBtn" class="legal-link">Privacidade · Termos</button>
       </aside>
 
-      <main id="content" class="content" aria-live="polite">
-        <div style="text-align: left;">
-          <img style="width: 25%; border-radius: 50%;" src="./assets/photo.png">
-        </div>
+      <main id="content" class="content">
+
+        <!-- Hero -->
+        <section class="block visible" id="block-hero">
+          <div style="text-align: left; margin-bottom: 28px;">
+            <img style="width: 25%; border-radius: 50%;" src="./assets/photo.png" alt="Foto de Guilherme Ribeiro">
+          </div>
+          <h1>Guilherme Ribeiro</h1>
+          <blockquote>
+            <p>Desenvolvedor JavaScript &amp; Python</p>
+          </blockquote>
+          <div class="cta-row">
+            <a href="#block-projetos">Ver projetos</a>
+            <a href="#block-contato">Falar comigo</a>
+          </div>
+        </section>
+
+        <!-- Sobre -->
+        <section class="block" id="block-sobre">
+          <h1>Sobre</h1>
+          <p>
+            Desenvolvedor com foco em JavaScript, TypeScript, Node.js e Python. Experiência no desenvolvimento de
+            aplicações web, APIs, sistemas de autenticação, bancos de dados SQLite e projetos CRUD completos.
+            Trabalho com arquiteturas SPA, ferramentas CLI, integrações com APIs e aplicações interativas
+            utilizando Three.js, priorizando código legível, organização e manutenção de longo prazo.
+          </p>
+          <p>
+            Mantenho o laboratório LiberStack, onde publico projetos open source, boilerplates, documentação
+            técnica, experimentos e produtos digitais voltados ao ecossistema web moderno, sempre com foco em
+            soluções práticas, simples de compreender e fáceis de evoluir.
+          </p>
+          <p>Trabalho principalmente com:</p>
+          <ul>
+            <li>JavaScript e TypeScript</li>
+            <li>Python para automação e scripts de backend</li>
+            <li>Node.js e SQLite para back-ends leves</li>
+            <li>HTML e CSS sem frameworks visuais pesados</li>
+          </ul>
+        </section>
+
+        <!-- Projetos -->
+        <section class="block" id="block-projetos">
+          <h1>Projetos</h1>
+
+          <h2>DEV SKILL VAULT</h2>
+          <p>
+            Conteúdo exclusivo para desenvolvedores focado em JavaScript e Python; projetos, boilerplates,
+            templates, aplicações web, automações, workflow, tutoriais, guias, documentação README/DEPLOY.
+          </p>
+          <ul>
+            <li><a href="https://svault.pages.dev" target="_blank" rel="noopener">svault.pages.dev</a></li>
+          </ul>
+
+          <h2>Liberstack Open Source HUB</h2>
+          <p>
+            Uso meu repositório pessoal no Git como plataforma para divulgação técnica e colaboração com outros
+            desenvolvedores. Publico projetos open source com foco em HTML, CSS, JavaScript, TypeScript,
+            Node.js, Python e SQLite.
+          </p>
+          <ul>
+            <li><a href="https://github.com/liberstack" target="_blank" rel="noopener">github.com/liberstack</a></li>
+          </ul>
+        </section>
+
+        <!-- Contato -->
+        <section class="block" id="block-contato">
+          <h1>Contato</h1>
+          <p>Tem um projeto em mente ou quer trocar uma ideia? Manda mensagem.</p>
+          <ul>
+            <li><a href="mailto:topverbs@gmail.com">topverbs@gmail.com</a></li>
+            <li><a href="https://github.com/liberstack" target="_blank" rel="noopener">github.com/liberstack</a></li>
+            <li><a href="https://linkedin.com/in/gribeirodev" target="_blank"
+                rel="noopener">linkedin.com/in/gribeirodev</a></li>
+          </ul>
+        </section>
+
       </main>
 
     </div>
@@ -47,16 +124,45 @@
 
   </div>
 
+  <!-- Modal legal -->
   <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-label="Documento legal">
     <div class="modal-card">
       <button id="modalClose" class="modal-close" aria-label="Fechar">×</button>
-      <div id="modalBody"></div>
+      <div id="modalBody">
+
+        <h1>Política de Privacidade</h1>
+        <p>Última atualização: junho de 2026.</p>
+        <p>
+          Este site não utiliza cookies de rastreamento nem compartilha dados de visitantes com terceiros.
+          As informações enviadas através do formulário de contato (nome, e-mail e mensagem) são usadas
+          exclusivamente para responder ao seu contato.
+        </p>
+        <p>
+          Nenhum dado é armazenado em servidores além do necessário para o envio da mensagem. Você pode
+          solicitar a remoção de qualquer informação enviada a qualquer momento, entrando em contato pelo
+          e-mail listado na seção de Contato.
+        </p>
+
+        <h1>Termos de Uso</h1>
+        <p>
+          Ao utilizar este site, você concorda que todo o conteúdo, incluindo textos, imagens e código-fonte
+          exibido, pertence ao autor, salvo quando indicado o contrário.
+        </p>
+        <p>
+          O conteúdo deste site é fornecido "como está", sem garantias de qualquer tipo quanto à
+          disponibilidade contínua ou ausência de erros.
+        </p>
+        <p>
+          É proibida a reprodução do conteúdo deste site sem autorização prévia, exceto para fins de
+          citação com a devida referência.
+        </p>
+
+      </div>
     </div>
   </div>
 
-  <script src="marked.min.js"></script>
-  <script src="app.js"></script>
   <script src="ui.js"></script>
+
 </body>
 
 </html>
